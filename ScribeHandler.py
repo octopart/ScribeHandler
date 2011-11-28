@@ -157,6 +157,8 @@ class ScribeHandler(logging.Handler):
         If a formatter is specified, it is used to format the record.
         The record is then logged to Scribe with a trailing newline.
         """
+        if isinstance(record.msg, unicode):
+            record.msg = record.msg.encode('utf-8')
         # apply formatting to the record.
         msg = self.format(record)
         # for backwards-compatibility, do not add in a line break if it
