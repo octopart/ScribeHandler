@@ -7,14 +7,14 @@ setup(
     author='Jeremy Jones',
     author_email='jeremyj@letifer.org',
     url='http://github.com/jmj/ScribeHandler',
-    version='0.054',
+    version='0.055',
     py_modules=['ScribeHandler'],
     license='GPLv2',
     long_description=open('README').read(),
     description='ScribeHandler is a simple proxy layer that works with the python standard logging module',
     install_requires = [
         'scribe>=2.0',
-        'Thrift>=0.8.0utf',
+        'Thrift==1.0.0-unicode',
         'fb303>=1.0',
     ],
     classifiers=[
