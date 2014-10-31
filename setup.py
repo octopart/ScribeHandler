@@ -13,9 +13,9 @@ setup(
     long_description=open('README').read(),
     description='ScribeHandler is a simple proxy layer that works with the python standard logging module',
     install_requires = [
-        'scribe>=2.0',
-        'Thrift==1.0.0-unicode',
         'fb303>=1.0',
+        'scribe>=2.0',
+        'thrift>=1.0.1-unicode',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
